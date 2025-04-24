@@ -1,12 +1,12 @@
 import './index.scss';
 import React from 'react';
 
-import imageBeginner from '../../../assets/landingpage/beginner.jpg';
-import imageIntermediate from '../../../assets/landingpage/intermediario.jpg';
-import imageAdvanced from '../../../assets/landingpage/advanced.jpg';
-import imageLPO from '../../../assets/landingpage/modalidadeLpo.jpg';
-import imageGymnastics from '../../../assets/landingpage/modalidadeGymnastics.jpg';
-import imageMatcon from '../../../assets/landingpage/modalidadeMetcon(1).jpg';
+import imageBeginner from '../../../assets/landingpageImage/beginner.jpg';
+import imageIntermediate from '../../../assets/landingpageImage/intermediario.jpg';
+import imageAdvanced from '../../../assets/landingpageImage/advanced.jpg';
+import imageLPO from '../../../assets/landingpageImage/modalidadeLpo.jpg';
+import imageGymnastics from '../../../assets/landingpageImage/modalidadeGymnastics.jpg';
+import imageMatcon from '../../../assets/landingpageImage/modalidadeMetcon(1).jpg';
 
 const Card = ({ image, alt, title, description }) => (
   <article className="card">

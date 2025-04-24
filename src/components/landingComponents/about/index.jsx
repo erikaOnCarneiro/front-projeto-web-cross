@@ -1,7 +1,7 @@
 import './index.scss';
 import React from 'react';
 import { FaCheck } from 'react-icons/fa';
-import imageAbout from '../../../assets/landingpage/about.jpg';
+import imageAbout from '../../../assets/landingpageImage/about.jpg';
 
 export default function About() {
   return (
