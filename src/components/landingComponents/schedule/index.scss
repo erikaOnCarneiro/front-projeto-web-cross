@@ -1,0 +1,59 @@
+.schedule {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    padding: 4rem 2rem;
+    text-align: center;
+    background: #262525 0% 0% no-repeat padding-box;
+    border: 1px solid #707070;
+  
+    &__container {
+      max-width: 960px;
+      margin: 0 auto;
+    }
+  
+    &__title {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+  
+    &__description {
+      font-size: 1.1rem;
+      margin-bottom: 3rem;
+      color: #cccccc;
+    }
+  
+    &__info {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+  
+      @media (min-width: 768px) {
+        flex-direction: row;
+        justify-content: center;
+      }
+    }
+  
+    &__card {
+      background-color: #2a2a2a;
+      padding: 2rem;
+      border-radius: 1.5rem;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      max-width: 400px;
+  
+      h3 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+        color: #00bfff;
+      }
+  
+      p {
+        font-size: 1rem;
+        color: #dddddd;
+  
+        strong {
+          color: #ffffff;
+        }
+      }
+    }
+  }

@@ -1,88 +1,114 @@
 .about {
-    background-color: #121212;
-    color: #fff;
-    padding: 4rem 2rem;
-  
-    &__container {
-      max-width: 1200px;
-      margin: 0 auto;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 2rem;
-      align-items: flex-start;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+  padding: 4rem 2rem;
+  flex-wrap: wrap;
+  border: 1px solid #707070;
+  background: #262525 0% 0% no-repeat padding-box;
+  color: #fff;
+
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+
+    span {
+      color: #0072D8;
     }
-  
-    &__text {
-      flex: 1 1 500px;
-  
-      h2 {
-        font-size: 2rem;
-        margin-bottom: 1rem;
-  
-        span {
-          color: #2486e0;
-        }
-      }
-  
-      p {
-        margin-bottom: 1rem;
-        font-size: 1rem;
-        line-height: 1.6;
-      }
+  }
+
+  &__content {
+    flex: 1 1 500px;
+
+    p {
+      margin-bottom: 1rem;
+      font-size: 1rem;
+      line-height: 1.5;
     }
-  
-    &__list {
-      list-style: none;
-      padding: 0;
-      margin-top: 1.5rem;
+
+    ul {
+      margin-top: 1rem;
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      grid-template-columns: 1fr 1fr;
       gap: 0.8rem;
-  
+
       li {
         display: flex;
         align-items: center;
         gap: 0.5rem;
         font-size: 0.95rem;
-  
+
         svg {
-          color: #2486e0;
-          min-width: 18px;
-        }
-      }
-    }
-  
-    &__image {
-      position: relative;
-      flex: 1 1 300px;
-  
-      img {
-        width: 100%;
-        border-radius: 12px;
-        object-fit: cover;
-      }
-  
-      .about__badge {
-        position: absolute;
-        bottom: 1rem;
-        left: 1rem;
-        background-color: #2486e0;
-        color: #fff;
-        padding: 1rem;
-        border-radius: 1rem;
-        text-align: center;
-  
-        strong {
-          display: block;
-          font-size: 1.8rem;
-          font-weight: bold;
-        }
-  
-        span {
-          font-size: 0.9rem;
-          font-weight: normal;
+          color: #0072D8;
         }
       }
     }
   }
-  
+
+  &__image {
+    position: relative;
+    flex: 1 1 300px;
+    max-width: 500px;
+    width: 100%;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 1rem;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    .about__badge {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      background-color: #0072D8;
+      color: white;
+      padding: 0.8rem;
+      border-radius: 0.8rem;
+      text-align: center;
+      max-width: 100%;
+      font-size: 0.8rem;
+      z-index: 10;
+
+      strong {
+        display: block;
+        font-size: 1.3rem;
+        margin-bottom: 0.3rem;
+      }
+    }
+  }
+}
+
+// Responsividade
+@media (max-width: 768px) {
+  .about {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    &__content,
+    &__image {
+      flex: 1 1 100%;
+      max-width: 100%;
+    }
+
+    &__content ul {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .about__image {
+    .about__badge {
+      padding: 0.5rem;
+      font-size: 0.75rem;
+
+      strong {
+        font-size: 1.1rem;
+      }
+    }
+  }
+}
