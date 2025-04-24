@@ -1,6 +1,7 @@
 import './index.scss';
 import React from 'react';
 import { FaArrowRight, FaWhatsapp } from 'react-icons/fa';
+import Modality from '../modality/index.jsx'; 
 
 export default function Home() {
     return (
@@ -17,14 +18,16 @@ export default function Home() {
                     <div className="buttons">
                         <a 
                             className="btn-primary" 
-                            href="https://wa.me/5599999999999?text=Olá! Gostaria de agendar uma aula experimental no Cross Alvorada." 
+                            href="https://wa.me/5511968650369"
+
                             target="_blank" 
                             rel="noopener noreferrer"
                         >
                             <FaWhatsapp /> Agende uma aula experimental
                         </a>
                         <button className="btn-outline">
-                            Conheça nossas modalidades <FaArrowRight />
+                            Conheça nossas modalidades <FaArrowRight /> 
+
                         </button>
                     </div>
                 </div>

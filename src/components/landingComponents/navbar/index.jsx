@@ -21,14 +21,15 @@ export default function Navbar() {
           <li><a href="#schedule">Horários</a></li>
           <li><a href="#coach">Coach</a></li>
           <li><a href="#events">Eventos</a></li>
+          <li><a href="#call">Contato</a></li>
         </ul>
 
         <div className="nav-actions">
           <div className="social-icons">
-            <a href="https://instagram.com/seuperfil" target="_blank" rel="noreferrer">
+            <a href="https://www.instagram.com/alvorada.cross?igsh=MW55aGxmc2g0ZHQyOQ==" target="_blank" rel="noreferrer">
               <FaInstagram />
             </a>
-            <a href="https://wa.me/55SEUNUMERO" target="_blank" rel="noreferrer">
+            <a href="https://wa.me/5511968650369" target="_blank" rel="noreferrer">
               <FaWhatsapp />
             </a>
             <a href="/login" className="login-btn">

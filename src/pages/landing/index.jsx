@@ -9,7 +9,9 @@ import Modality from '../../components/landingComponents/modality/index.jsx';
 import Schedule from '../../components/landingComponents/schedule/index.jsx';
 import Coach from '../../components/landingComponents/coach/index.jsx';
 //import Events from '../../components/landingComponents/events/index.jsx';
-//import Footer from '../../components/landingComponents/footer/index.jsx';
+import Call from '../../components/landingComponents/call/index.jsx';
+import Footer from '../../components/landingComponents/footer/index.jsx';
+
 
 export default function Landing() {
     return (  
@@ -20,6 +22,8 @@ export default function Landing() {
             <Modality />
             <Schedule />
             <Coach />
+            <Call />
+            <Footer />
         </div>  
     );
 }
